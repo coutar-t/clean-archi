@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         interactor.output = presenter
         presenter.output = viewController
 
-        window?.rootViewController = viewController
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
         return true
     }

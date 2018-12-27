@@ -1,5 +1,5 @@
 //
-//  PizzaDataModel.swift
+//  PizzaItem.swift
 //  Business
 //
 //  Created by Thibaut Coutard on 27/12/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PizzaDataModel {
-    public var name: String
-    public var isVeggie: Bool
+public protocol PizzaItemProtocol {
+    var name: String { get set }
+    var isVeggie: Bool { get set }
 }

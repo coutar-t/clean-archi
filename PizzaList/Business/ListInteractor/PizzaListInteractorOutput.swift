@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol PizzaListInteractorOutput: class {
-    func pizzaLoaded(pizza: [PizzaDataModel])
+    func pizzaLoaded(pizza: [PizzaItemProtocol])
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol PizzaListRepositoryOuput: class {
-    func receivedPizzas(with pizzas: [PizzaModel])
+    func receivedPizzas(with pizzas: [PizzaResponseProtocol])
 }

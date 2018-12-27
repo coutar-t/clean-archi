@@ -22,7 +22,7 @@ class PizzaListInteractor: PizzaListInteractorInput {
 }
 
 extension PizzaListInteractor: PizzaListRepositoryOuput {
-    func receivedPizzas(with pizzas: [PizzaModel]) {
-        output?.pizzaLoaded(pizza: pizzas.map({ PizzaDataModel(name: $0.name, isVeggie: $0.isVeggie) }))
+    func receivedPizzas(with pizzas: [PizzaResponseProtocol]) {
+        output?.pizzaLoaded(pizza: pizzas.map({ PizzaItem(name: $0.name, isVeggie: $0.isVeggie) }))
     }
 }

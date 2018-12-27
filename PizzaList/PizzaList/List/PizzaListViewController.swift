@@ -42,6 +42,7 @@ extension PizzaListViewController: UITableViewDataSource {
 extension PizzaListViewController: PizzaListPresenterOutput {
     func updateViewModel(viewModel: PizzaListViewModel) {
         self.viewModel = viewModel
+        self.title = viewModel.title
         tableView.reloadData()
     }
 }

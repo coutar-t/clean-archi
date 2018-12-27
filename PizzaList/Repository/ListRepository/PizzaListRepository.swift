@@ -11,9 +11,9 @@ import Business
 
 class PizzaListRepository: PizzaListRepositoryInput {
     var pizzas = [
-        PizzaModel(name: "Margarita", isVeggie: false),
-        PizzaModel(name: "Hawaienne", isVeggie: true),
-        PizzaModel(name: "Savoyarde", isVeggie: false)
+        PizzaResponse(name: "Margarita", isVeggie: false),
+        PizzaResponse(name: "Hawaienne", isVeggie: true),
+        PizzaResponse(name: "Savoyarde", isVeggie: false)
     ]
     weak var output: PizzaListRepositoryOuput?
 

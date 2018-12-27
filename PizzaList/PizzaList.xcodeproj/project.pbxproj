@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783E40C121D51ECB005B602A /* PizzaResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E40BF21D51E78005B602A /* PizzaResponseProtocol.swift */; };
+		783E40C221D51FA5005B602A /* PizzaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441621CAFB7D00D3A5B3 /* PizzaResponse.swift */; };
+		783E40C521D5201C005B602A /* PizzaItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E40C421D5201C005B602A /* PizzaItemProtocol.swift */; };
+		783E40C721D520C6005B602A /* PizzaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8B821D4D56F00CF5814 /* PizzaItem.swift */; };
 		788A43ED21CAF4AC00D3A5B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A43EC21CAF4AC00D3A5B3 /* AppDelegate.swift */; };
 		788A43EF21CAF4AC00D3A5B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A43EE21CAF4AC00D3A5B3 /* ViewController.swift */; };
 		788A43F221CAF4AC00D3A5B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788A43F021CAF4AC00D3A5B3 /* Main.storyboard */; };
@@ -25,9 +29,7 @@
 		78A3C8B221D4D4D700CF5814 /* PizzaListRepositoryOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441E21D4CE9200D3A5B3 /* PizzaListRepositoryOutput.swift */; };
 		78A3C8B321D4D4DB00CF5814 /* PizzaListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441C21D4CE6500D3A5B3 /* PizzaListInteractorInput.swift */; };
 		78A3C8B421D4D4DF00CF5814 /* PizzaListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441121CAF5E200D3A5B3 /* PizzaListInteractor.swift */; };
-		78A3C8B521D4D4FD00CF5814 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441621CAFB7D00D3A5B3 /* PizzaModel.swift */; };
 		78A3C8B621D4D51100CF5814 /* PizzaListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A442321D4CEED00D3A5B3 /* PizzaListInteractorOutput.swift */; };
-		78A3C8B921D4D56F00CF5814 /* PizzaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8B821D4D56F00CF5814 /* PizzaDataModel.swift */; };
 		78A3C8BC21D4D67F00CF5814 /* PizzaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8BB21D4D67F00CF5814 /* PizzaListViewModel.swift */; };
 		78A3C8BE21D4D6AB00CF5814 /* PizzaCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8BD21D4D6AB00CF5814 /* PizzaCellViewModel.swift */; };
 		78A3C8C021D4D6DE00CF5814 /* PizzaListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8BF21D4D6DE00CF5814 /* PizzaListPresenterOutput.swift */; };
@@ -119,6 +121,8 @@
 
 /* Begin PBXFileReference section */
 		2A7FAF6402985DAF7FC061EA /* Pods-PizzaList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaList.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaList/Pods-PizzaList.release.xcconfig"; sourceTree = "<group>"; };
+		783E40BF21D51E78005B602A /* PizzaResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaResponseProtocol.swift; sourceTree = "<group>"; };
+		783E40C421D5201C005B602A /* PizzaItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaItemProtocol.swift; sourceTree = "<group>"; };
 		788A43E921CAF4AC00D3A5B3 /* PizzaList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788A43EC21CAF4AC00D3A5B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788A43EE21CAF4AC00D3A5B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +137,7 @@
 		788A440F21CAF51600D3A5B3 /* PizzaListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListPresenter.swift; sourceTree = "<group>"; };
 		788A441121CAF5E200D3A5B3 /* PizzaListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListInteractor.swift; sourceTree = "<group>"; };
 		788A441321CAF77A00D3A5B3 /* PizzaListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListRepository.swift; sourceTree = "<group>"; };
-		788A441621CAFB7D00D3A5B3 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		788A441621CAFB7D00D3A5B3 /* PizzaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaResponse.swift; sourceTree = "<group>"; };
 		788A441921D4CE1E00D3A5B3 /* PizzaListRepositoryInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListRepositoryInput.swift; sourceTree = "<group>"; };
 		788A441C21D4CE6500D3A5B3 /* PizzaListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListInteractorInput.swift; sourceTree = "<group>"; };
 		788A441E21D4CE9200D3A5B3 /* PizzaListRepositoryOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListRepositoryOutput.swift; sourceTree = "<group>"; };
@@ -145,7 +149,7 @@
 		78A3C89A21D4D48F00CF5814 /* BusinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A3C8A121D4D48F00CF5814 /* BusinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTests.swift; sourceTree = "<group>"; };
 		78A3C8A321D4D48F00CF5814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78A3C8B821D4D56F00CF5814 /* PizzaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDataModel.swift; sourceTree = "<group>"; };
+		78A3C8B821D4D56F00CF5814 /* PizzaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaItem.swift; sourceTree = "<group>"; };
 		78A3C8BB21D4D67F00CF5814 /* PizzaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListViewModel.swift; sourceTree = "<group>"; };
 		78A3C8BD21D4D6AB00CF5814 /* PizzaCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCellViewModel.swift; sourceTree = "<group>"; };
 		78A3C8BF21D4D6DE00CF5814 /* PizzaListPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListPresenterOutput.swift; sourceTree = "<group>"; };
@@ -236,6 +240,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		783E40BE21D51E41005B602A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				783E40BF21D51E78005B602A /* PizzaResponseProtocol.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		783E40C321D5200F005B602A /* ItemProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				783E40C421D5201C005B602A /* PizzaItemProtocol.swift */,
+			);
+			path = ItemProtocol;
+			sourceTree = "<group>";
+		};
 		788A43E021CAF4AC00D3A5B3 = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +320,7 @@
 		788A441521CAFB6E00D3A5B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				788A441621CAFB7D00D3A5B3 /* PizzaModel.swift */,
+				788A441621CAFB7D00D3A5B3 /* PizzaResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,11 +356,12 @@
 		78A3C89321D4D48F00CF5814 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				78A3C8E621D4D8F800CF5814 /* Repository */,
+				783E40C321D5200F005B602A /* ItemProtocol */,
+				78A3C8E621D4D8F800CF5814 /* RepositoryProtocols */,
 				78A3C8C121D4D7EE00CF5814 /* Factories */,
-				78A3C8B721D4D56000CF5814 /* DataModel */,
-				788A441521CAFB6E00D3A5B3 /* Model */,
 				788A441B21D4CE3D00D3A5B3 /* ListInteractor */,
+				783E40BE21D51E41005B602A /* Response */,
+				78A3C8B721D4D56000CF5814 /* Item */,
 				78A3C89421D4D48F00CF5814 /* Business.h */,
 				78A3C89521D4D48F00CF5814 /* Info.plist */,
 			);
@@ -356,12 +377,12 @@
 			path = BusinessTests;
 			sourceTree = "<group>";
 		};
-		78A3C8B721D4D56000CF5814 /* DataModel */ = {
+		78A3C8B721D4D56000CF5814 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				78A3C8B821D4D56F00CF5814 /* PizzaDataModel.swift */,
+				78A3C8B821D4D56F00CF5814 /* PizzaItem.swift */,
 			);
-			path = DataModel;
+			path = Item;
 			sourceTree = "<group>";
 		};
 		78A3C8BA21D4D66E00CF5814 /* ListViewModel */ = {
@@ -384,6 +405,7 @@
 		78A3C8CA21D4D88F00CF5814 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				788A441521CAFB6E00D3A5B3 /* Model */,
 				78A3C8E821D4DC7200CF5814 /* Factories */,
 				788A441821D4CDFA00D3A5B3 /* ListRepository */,
 				78A3C8CB21D4D88F00CF5814 /* Repository.h */,
@@ -401,13 +423,13 @@
 			path = RepositoryTests;
 			sourceTree = "<group>";
 		};
-		78A3C8E621D4D8F800CF5814 /* Repository */ = {
+		78A3C8E621D4D8F800CF5814 /* RepositoryProtocols */ = {
 			isa = PBXGroup;
 			children = (
 				788A441921D4CE1E00D3A5B3 /* PizzaListRepositoryInput.swift */,
 				788A441E21D4CE9200D3A5B3 /* PizzaListRepositoryOutput.swift */,
 			);
-			path = Repository;
+			path = RepositoryProtocols;
 			sourceTree = "<group>";
 		};
 		78A3C8E821D4DC7200CF5814 /* Factories */ = {
@@ -735,11 +757,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A3C8C321D4D80B00CF5814 /* ListInteractorFactory.swift in Sources */,
-				78A3C8B921D4D56F00CF5814 /* PizzaDataModel.swift in Sources */,
+				783E40C121D51ECB005B602A /* PizzaResponseProtocol.swift in Sources */,
 				78A3C8B421D4D4DF00CF5814 /* PizzaListInteractor.swift in Sources */,
-				78A3C8B521D4D4FD00CF5814 /* PizzaModel.swift in Sources */,
 				78A3C8B221D4D4D700CF5814 /* PizzaListRepositoryOutput.swift in Sources */,
 				78A3C8B321D4D4DB00CF5814 /* PizzaListInteractorInput.swift in Sources */,
+				783E40C521D5201C005B602A /* PizzaItemProtocol.swift in Sources */,
+				783E40C721D520C6005B602A /* PizzaItem.swift in Sources */,
 				78A3C8B121D4D4D300CF5814 /* PizzaListRepositoryInput.swift in Sources */,
 				78A3C8B621D4D51100CF5814 /* PizzaListInteractorOutput.swift in Sources */,
 			);
@@ -758,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A3C8EA21D4DC8700CF5814 /* PizzaListRepositoryFactory.swift in Sources */,
+				783E40C221D51FA5005B602A /* PizzaResponse.swift in Sources */,
 				78A3C8E721D4D90F00CF5814 /* PizzaListRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

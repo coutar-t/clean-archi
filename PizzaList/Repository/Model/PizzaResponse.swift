@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Business
 
-public struct PizzaModel {
+struct PizzaResponse: PizzaResponseProtocol {
     var name: String
     var isVeggie: Bool
 
-    public init(name: String, isVeggie: Bool) {
+    init(name: String, isVeggie: Bool) {
         self.name = name
         self.isVeggie = isVeggie
     }
