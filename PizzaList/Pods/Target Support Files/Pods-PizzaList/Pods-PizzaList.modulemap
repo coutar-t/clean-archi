@@ -1,0 +1,6 @@
+framework module Pods_PizzaList {
+  umbrella header "Pods-PizzaList-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,14 +9,10 @@
 import Foundation
 import UIKit
 
-protocol PizzaListPresenterOutput: class {
-    func updateViewModel(viewModel: [String])
-}
-
 class PizzaListViewController: UIViewController {
     var presenter: PizzaListPresenterInput!
     var tableView: UITableView!
-    var viewModel: [String] = []
+    var viewModel: PizzaListViewModel?
 
     convenience init(presenter: PizzaListPresenterInput) {
         self.init()
@@ -34,17 +30,17 @@ class PizzaListViewController: UIViewController {
 extension PizzaListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel[indexPath.row]
+        cell.textLabel?.text = viewModel?.pizzaCells[indexPath.row].name
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.count
+        return viewModel?.pizzaCells.count ?? 0
     }
 }
 
 extension PizzaListViewController: PizzaListPresenterOutput {
-    func updateViewModel(viewModel: [String]) {
+    func updateViewModel(viewModel: PizzaListViewModel) {
         self.viewModel = viewModel
         tableView.reloadData()
     }

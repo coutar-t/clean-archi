@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Repository
+import Business
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
 
-        let repository = PizzaListRepository()
-        let interactor = PizzaListInteractor(repository: repository)
+        let repository = PizzaListRepositoryFactory().getRepository()
+        let interactor = PizzaListInteractorFactory(with: repository).getInteractor()
         let presenter = PizzaListPresenter(interactor: interactor)
         let viewController = PizzaListViewController(presenter: presenter)
 
-        repository.output = interactor
-        interactor.interactorOutput = presenter
+        interactor.output = presenter
         presenter.output = viewController
 
         window?.rootViewController = viewController
