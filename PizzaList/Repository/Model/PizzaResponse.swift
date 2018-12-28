@@ -18,3 +18,7 @@ struct PizzaResponse: PizzaResponseProtocol {
         self.isVeggie = isVeggie
     }
 }
+
+extension PizzaResponse: Equatable {
+
+}

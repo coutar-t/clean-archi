@@ -7,28 +7,46 @@
 //
 
 import XCTest
+import Business
 @testable import Repository
 
 class RepositoryTests: XCTestCase {
 
+    var sut: PizzaListRepository!
+    var mockOutput: MockPizzaRepositoryOutput!
+
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = PizzaListRepository()
+        mockOutput = MockPizzaRepositoryOutput()
+        sut.output = mockOutput
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_PizzaListRepository_GetPizzas_CallsOutput() {
+        sut.getPizza()
+
+        XCTAssertTrue(mockOutput.receivedPizzaCalled)
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func test_PizzaListRepository_GetPizzas_CallsOutputWithPizzas() {
+        let firstPizza = PizzaResponse(name: "First", isVeggie: true)
+        let secondPizza = PizzaResponse(name: "Second", isVeggie: false)
+        sut.pizzas = [firstPizza,
+                      secondPizza]
+        sut.getPizza()
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        XCTAssertEqual(firstPizza, mockOutput.receivedPizza.first as! PizzaResponse)
+        XCTAssertEqual(secondPizza, mockOutput.receivedPizza.last as! PizzaResponse)
+        XCTAssertEqual(mockOutput.receivedPizza.count, 2)
     }
+}
 
+class MockPizzaRepositoryOutput: PizzaListRepositoryOuput {
+
+    var receivedPizzaCalled = false
+    var receivedPizza: [PizzaResponseProtocol] = []
+
+    func receivedPizzas(with pizzas: [PizzaResponseProtocol]) {
+        receivedPizzaCalled = true
+        receivedPizza = pizzas
+    }
 }

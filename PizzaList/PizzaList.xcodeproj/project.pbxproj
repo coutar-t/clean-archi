@@ -11,6 +11,8 @@
 		783E40C221D51FA5005B602A /* PizzaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A441621CAFB7D00D3A5B3 /* PizzaResponse.swift */; };
 		783E40C521D5201C005B602A /* PizzaItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E40C421D5201C005B602A /* PizzaItemProtocol.swift */; };
 		783E40C721D520C6005B602A /* PizzaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3C8B821D4D56F00CF5814 /* PizzaItem.swift */; };
+		783E40C921D61D2A005B602A /* PizzaListRepositoryFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E40C821D61D2A005B602A /* PizzaListRepositoryFactoryTests.swift */; };
+		783E40CB21D6816F005B602A /* ListInteractorFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E40CA21D6816F005B602A /* ListInteractorFactoryTests.swift */; };
 		788A43ED21CAF4AC00D3A5B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A43EC21CAF4AC00D3A5B3 /* AppDelegate.swift */; };
 		788A43EF21CAF4AC00D3A5B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A43EE21CAF4AC00D3A5B3 /* ViewController.swift */; };
 		788A43F221CAF4AC00D3A5B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788A43F021CAF4AC00D3A5B3 /* Main.storyboard */; };
@@ -123,6 +125,8 @@
 		2A7FAF6402985DAF7FC061EA /* Pods-PizzaList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaList.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaList/Pods-PizzaList.release.xcconfig"; sourceTree = "<group>"; };
 		783E40BF21D51E78005B602A /* PizzaResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaResponseProtocol.swift; sourceTree = "<group>"; };
 		783E40C421D5201C005B602A /* PizzaItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaItemProtocol.swift; sourceTree = "<group>"; };
+		783E40C821D61D2A005B602A /* PizzaListRepositoryFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListRepositoryFactoryTests.swift; sourceTree = "<group>"; };
+		783E40CA21D6816F005B602A /* ListInteractorFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorFactoryTests.swift; sourceTree = "<group>"; };
 		788A43E921CAF4AC00D3A5B3 /* PizzaList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788A43EC21CAF4AC00D3A5B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788A43EE21CAF4AC00D3A5B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -357,11 +361,11 @@
 			isa = PBXGroup;
 			children = (
 				783E40C321D5200F005B602A /* ItemProtocol */,
+				78A3C8B721D4D56000CF5814 /* Item */,
+				783E40BE21D51E41005B602A /* Response */,
 				78A3C8E621D4D8F800CF5814 /* RepositoryProtocols */,
 				78A3C8C121D4D7EE00CF5814 /* Factories */,
 				788A441B21D4CE3D00D3A5B3 /* ListInteractor */,
-				783E40BE21D51E41005B602A /* Response */,
-				78A3C8B721D4D56000CF5814 /* Item */,
 				78A3C89421D4D48F00CF5814 /* Business.h */,
 				78A3C89521D4D48F00CF5814 /* Info.plist */,
 			);
@@ -373,6 +377,7 @@
 			children = (
 				78A3C8A121D4D48F00CF5814 /* BusinessTests.swift */,
 				78A3C8A321D4D48F00CF5814 /* Info.plist */,
+				783E40CA21D6816F005B602A /* ListInteractorFactoryTests.swift */,
 			);
 			path = BusinessTests;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 			children = (
 				78A3C8D821D4D88F00CF5814 /* RepositoryTests.swift */,
 				78A3C8DA21D4D88F00CF5814 /* Info.plist */,
+				783E40C821D61D2A005B602A /* PizzaListRepositoryFactoryTests.swift */,
 			);
 			path = RepositoryTests;
 			sourceTree = "<group>";
@@ -772,6 +778,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783E40CB21D6816F005B602A /* ListInteractorFactoryTests.swift in Sources */,
 				78A3C8A221D4D48F00CF5814 /* BusinessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,6 +798,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A3C8D921D4D88F00CF5814 /* RepositoryTests.swift in Sources */,
+				783E40C921D61D2A005B602A /* PizzaListRepositoryFactoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

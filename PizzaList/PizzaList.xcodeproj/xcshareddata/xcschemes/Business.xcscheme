@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "788A43E821CAF4AC00D3A5B3"
-               BuildableName = "PizzaList.app"
-               BlueprintName = "PizzaList"
+               BlueprintIdentifier = "78A3C89121D4D48F00CF5814"
+               BuildableName = "Business.framework"
+               BlueprintName = "Business"
                ReferencedContainer = "container:PizzaList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,29 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "788A43FC21CAF4AD00D3A5B3"
-               BuildableName = "PizzaListTests.xctest"
-               BlueprintName = "PizzaListTests"
-               ReferencedContainer = "container:PizzaList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "78A3C89921D4D48F00CF5814"
                BuildableName = "BusinessTests.xctest"
                BlueprintName = "BusinessTests"
-               ReferencedContainer = "container:PizzaList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78A3C8D021D4D88F00CF5814"
-               BuildableName = "RepositoryTests.xctest"
-               BlueprintName = "RepositoryTests"
                ReferencedContainer = "container:PizzaList.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -63,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "788A43E821CAF4AC00D3A5B3"
-            BuildableName = "PizzaList.app"
-            BlueprintName = "PizzaList"
+            BlueprintIdentifier = "78A3C89121D4D48F00CF5814"
+            BuildableName = "Business.framework"
+            BlueprintName = "Business"
             ReferencedContainer = "container:PizzaList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,16 +62,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "788A43E821CAF4AC00D3A5B3"
-            BuildableName = "PizzaList.app"
-            BlueprintName = "PizzaList"
+            BlueprintIdentifier = "78A3C89121D4D48F00CF5814"
+            BuildableName = "Business.framework"
+            BlueprintName = "Business"
             ReferencedContainer = "container:PizzaList.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -101,16 +80,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "788A43E821CAF4AC00D3A5B3"
-            BuildableName = "PizzaList.app"
-            BlueprintName = "PizzaList"
+            BlueprintIdentifier = "78A3C89121D4D48F00CF5814"
+            BuildableName = "Business.framework"
+            BlueprintName = "Business"
             ReferencedContainer = "container:PizzaList.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
