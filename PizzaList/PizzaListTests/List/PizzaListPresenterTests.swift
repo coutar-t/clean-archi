@@ -46,6 +46,18 @@ class PizzaListPresenterTests: XCTestCase {
         XCTAssertEqual(output.viewModel.pizzaCells.last, secondPizza.asCell())
         XCTAssertEqual(output.viewModel.pizzaCells.count, 2)
     }
+
+    func test_PizzaListPresenter_PizzaLoaded_updateViewModelWithPizzasColor() {
+        let output = PizzaListPresenterOutputMock()
+        sut.output = output
+
+        let firstPizza = PizzaItemMock(name: "first", isVeggie: true)
+        let secondPizza = PizzaItemMock(name: "second", isVeggie: false)
+
+        sut.pizzaLoaded(pizza: [firstPizza, secondPizza])
+        XCTAssertEqual(output.viewModel.pizzaCells.first?.color, .Green)
+        XCTAssertEqual(output.viewModel.pizzaCells.last?.color, .None)
+    }
 }
 
 extension PizzaCellViewModel: Equatable {
@@ -59,7 +71,7 @@ struct PizzaItemMock: PizzaItemProtocol {
     var isVeggie: Bool
 
     func asCell() -> PizzaCellViewModel {
-        return PizzaCellViewModel(name: name)
+        return PizzaCellViewModel(name: name, color: .Green)
     }
 }
 

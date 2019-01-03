@@ -28,13 +28,13 @@ class PizzaListViewControllerTests: XCTestCase {
     }
 
     func test_PizzaListViewController_NumberOfRowsInSection_IsViewModelPizzaCells() {
-        let viewModel = PizzaListViewModel(title: "Coucou", pizzaCells: [PizzaCellViewModel(name: "first"), PizzaCellViewModel(name: "second")])
+        let viewModel = PizzaListViewModel(title: "Coucou", pizzaCells: [PizzaCellViewModel(name: "first", color: .Green), PizzaCellViewModel(name: "second", color: .Green)])
         sut.updateViewModel(viewModel: viewModel)
         XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 2)
     }
 
     func test_PizzaListViewController_CellForRow_UITableViewCell() {
-        let firstPizza = PizzaCellViewModel(name: "first")
+        let firstPizza = PizzaCellViewModel(name: "first", color: .Green)
         let viewModel = PizzaListViewModel(title: "Coucou", pizzaCells: [firstPizza])
         sut.updateViewModel(viewModel: viewModel)
         XCTAssertEqual(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0))?.textLabel?.text, firstPizza.name)
@@ -44,6 +44,17 @@ class PizzaListViewControllerTests: XCTestCase {
         let viewModel = PizzaListViewModel(title: "Coucou", pizzaCells: [])
         sut.updateViewModel(viewModel: viewModel)
         XCTAssertEqual(sut.title, viewModel.title)
+    }
+
+    func test_PizzaListViewController_CellForRow_AsColorOfPizza() {
+        let firstPizza = PizzaCellViewModel(name: "first", color: .Green)
+        let viewModel = PizzaListViewModel(title: "title", pizzaCells: [firstPizza])
+        sut.updateViewModel(viewModel: viewModel)
+        XCTAssertEqual(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0))?.backgroundColor, .green)
+        let secondPizza = PizzaCellViewModel(name: "second", color: .None)
+        let secondViewModel = PizzaListViewModel(title: "title", pizzaCells: [secondPizza])
+        sut.updateViewModel(viewModel: secondViewModel)
+        XCTAssertEqual(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0))?.backgroundColor, .clear)
     }
 }
 

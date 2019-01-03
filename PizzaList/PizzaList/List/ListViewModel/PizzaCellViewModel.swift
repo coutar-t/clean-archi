@@ -10,4 +10,10 @@ import Foundation
 
 struct PizzaCellViewModel {
     var name: String
+    var color: Color
+}
+
+enum Color {
+    case Green
+    case None
 }

@@ -24,7 +24,7 @@ class PizzaListPresenter: PizzaListPresenterInput {
 
 extension PizzaListPresenter: PizzaListInteractorOutput {
     func pizzaLoaded(pizza: [PizzaItemProtocol]) {
-        let cells: [PizzaCellViewModel] = pizza.compactMap({ PizzaCellViewModel(name: $0.name) })
+        let cells: [PizzaCellViewModel] = pizza.compactMap({ PizzaCellViewModel(name: $0.name, color: $0.isVeggie ? .Green : .None) })
         let pizzaViewModel = PizzaListViewModel(title: "Pizza Menu", pizzaCells: cells)
         output?.updateViewModel(viewModel: pizzaViewModel)
     }

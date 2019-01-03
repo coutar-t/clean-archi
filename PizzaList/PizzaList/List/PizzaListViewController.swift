@@ -29,8 +29,17 @@ class PizzaListViewController: UIViewController {
 
 extension PizzaListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let pizza = viewModel?.pizzaCells[indexPath.row] else {
+            return UITableViewCell()
+        }
         let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel?.pizzaCells[indexPath.row].name
+        cell.textLabel?.text = pizza.name
+        switch pizza.color {
+        case .Green:
+            cell.backgroundColor = .green
+        case .None:
+            cell.backgroundColor = .clear
+        }
         return cell
     }
 
