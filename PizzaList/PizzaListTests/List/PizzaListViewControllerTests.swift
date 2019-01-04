@@ -46,11 +46,14 @@ class PizzaListViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.title, viewModel.title)
     }
 
-    func test_PizzaListViewController_CellForRow_AsColorOfPizza() {
+    func test_PizzaListViewController_CellForRow_IsGreenForGreenColor() {
         let firstPizza = PizzaCellViewModel(name: "first", color: .Green)
         let viewModel = PizzaListViewModel(title: "title", pizzaCells: [firstPizza])
         sut.updateViewModel(viewModel: viewModel)
         XCTAssertEqual(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0))?.backgroundColor, .green)
+    }
+
+    func test_PizzaListViewController_CellForRow_IsClearForClearColor() {
         let secondPizza = PizzaCellViewModel(name: "second", color: .None)
         let secondViewModel = PizzaListViewModel(title: "title", pizzaCells: [secondPizza])
         sut.updateViewModel(viewModel: secondViewModel)
